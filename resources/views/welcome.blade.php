@@ -19,7 +19,7 @@
             <div class="max-w-7xl mx-auto p-6 lg:p-8">
                 <img src="/img/pizza-house.png" alt="pizza house logo">
                 <div class="flex justify-center">
-                    <h1 class="mt-6 text-xl font-semibold text-gray-900 ">Pizza House</h1>
+                    <h1 class="mt-6 text-xl font-semibold text-violet-600 ">Pizza House</h1>
                 
                 </div>
 
