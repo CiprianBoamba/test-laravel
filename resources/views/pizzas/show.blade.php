@@ -13,7 +13,7 @@
       <p>Type - {{$pizza->type}}</p>
       <p>Base - {{$pizza->base}}</p>
     </div>
-    <a href="/" class=" text-blue-600">Back to all pizzas</a>
+    <a href="/pizzas" class=" text-blue-600">Back to all pizzas</a>
   </div>
 </div>
 
