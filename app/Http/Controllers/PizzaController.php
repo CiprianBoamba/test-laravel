@@ -2,23 +2,25 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\Pizza;
+use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
+use Illuminate\Support\Facades\Validator;
 
 class PizzaController extends Controller
 {
     public function index() {
-    // $pizzas = Pizza::all();
-    // $pizzas = Pizza::orderBy('name', 'desc')->get();
-    // $pizzas = Pizza::where('type', 'Hawaiian')->get();
-    $pizzas = Pizza::latest()->get();
+    $pizzas = Pizza::all();
+   
 
-    return view('pizzas', 
+    return view('pizzas.index', 
     ['pizzas' => $pizzas,
     ]);
     }
 
     public function show($id) {
-        return view('details',['id' => $id]);  
+        return view('pizzas.show',['id' => $id]);  
     }
+
+   
 }

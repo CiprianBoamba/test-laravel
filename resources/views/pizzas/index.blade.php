@@ -11,7 +11,7 @@
           @foreach($pizzas as $pizza)
           <div class="flex items-center justify-center flex-col">
               <p>
-            {{$pizza['type']}} - {{$pizza['base']}}-{{$pizza['name']}}
+                {{$pizza['name']}} -{{$pizza['type']}} - {{$pizza['base']}}
               </p>
           </div>
             @endforeach
